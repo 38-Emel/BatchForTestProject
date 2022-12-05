@@ -1,4 +1,4 @@
-gpublic with sharing class SoqlDemo2 {
+public with sharing class SoqlDemo2 {
    public static void soqlchildToParent_1() {
     list<contact> listContact = [select id, name, account.name, account.industry from contact where Account.industry = 'Energy'];
     for (Contact eachname : listContact) {
